@@ -1,0 +1,39 @@
+{
+  "experiment": "persona_steering",
+  "llm": "Qwen/Qwen3-14B",
+  "task": "LaMP-4",
+  "config": {
+    "layer": 20,
+    "alpha": 1.0,
+    "n_positive": 3,
+    "n_negative": 3,
+    "n_questions": 1,
+    "extract_max_new_tokens": 50,
+    "smoke": true,
+    "smoke_n": 200
+  },
+  "result": {
+    "metric": "rouge",
+    "value": {
+      "ROUGE-1": 0.15194630789487135,
+      "ROUGE-L": 0.13091918137248895
+    },
+    "num_eval": 200,
+    "sample_preds": [
+      "**\"From Drunk Texts to Survival: One Ex-Wife's Journey Through the Unexpected Chaos of Divorce\"**",
+      "\"Sharon Chuter Sparks Industry Change with Call for Transparency in Black Representation\"",
+      "\"New Star on the Rise: Aussie Model Claims March Cover of Cosmopolitan Australia\"",
+      "**\"Echoes of Us: A Quiet Reflection on Distance and Memory\"**",
+      "Headline: \"The Gift That Saved a Life: Thomas Awiapo's Journey from Orphan to Hope\""
+    ],
+    "sample_refs": [
+      "Finding Happiness After Divorce -- It Can Happen",
+      "Pull Up For Change Calls On Brands To Address Their Role In White Supremacy",
+      "Robyn Lawley's Cosmo Australia Cover Is Naturally Beautiful (PHOTOS)",
+      "The Hard Truth All Parents Of Teenagers Understand",
+      "School Meals Can Save A Life And Change The World"
+    ]
+  },
+  "timestamp": "2026-04-30T23:12:05.824487",
+  "wall_seconds": 3004.3442163467407
+}

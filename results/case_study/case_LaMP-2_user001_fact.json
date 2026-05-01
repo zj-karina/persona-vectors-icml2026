@@ -1,0 +1,276 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "task": "LaMP-2",
+  "layer_idx": 13,
+  "user_idx": 1,
+  "variant": "fact",
+  "alphas": [
+    0.0,
+    0.5,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "gold": "entertainment",
+  "input_text": "Which category does this article relate to among the following categories? Just answer with the category name without further explanation. categories: [travel, education, parents, style & beauty, entertainment, food & drink, science & technology, business, sports, healthy living, women, politics, crime, culture & arts, religion] article: \"Nerd Porn Auteur\" dares to dream of a world where even more porn is made with geeky men in mind.",
+  "facts_text": "1. The user has categorized articles related to **toxic masculinity** in the context of **television reality shows**, specifically **\"The Bachelorette\"**, indicating an interest in **gender dynamics within pop culture entertainment**.\n\n2. The user has engaged with **literary analysis** of **contemporary fiction**, including works by **Christian Kracht** and **Jonathan Franzen**, suggesting a focus on **postmodern narrative structures** and **satirical commentary on societal norms**.\n\n3. The user has shown an interest in **language and cultural identity**, as evidenced by their categorization of an article about **Aatish Taseer's discussion of Sanskrit and English**, indicating a fascination with **linguistic power dynamics** and **cultural hybridity**.\n\n4. The user has included **micropoetry** in their categorized articles, specifically referencing a list of **17 micropoems**, suggesting an appreciation for **concise, emotionally resonant literary forms** and **poetic brevity**.\n\n5. The user has demonstrated an unusual interest in **celebrity behavior and public persona**, as seen in their categorization of an article about **Wednesday Martin denying fabrication allegations**, indicating a focus on **media authenticity and public image management**.",
+  "profile": [
+    "MOVIE: \"What Breaking Up On ‘The Bachelorette’ Reveals About Toxic Masculinity\"",
+    "MOVIE: \"Wednesday Martin Denies Fabrication Allegations: 'I Changed Identifying Details'\"",
+    "MOVIE: \"Aatish Taseer Talks Sanskrit, The Dangerous Power Of English, And His New Novel\"",
+    "MOVIE: \"The Bottom Line: 'Imperium: A Fiction Of The South Seas' By Christian Kracht\"",
+    "MOVIE: \"Jonathan Franzen Demonstrates His Spirit Animal Is Lucille Bluth\"",
+    "MOVIE: \"17 Micropoems To Give Your Soul A Lift In No Time\""
+  ],
+  "vector_norm": 7.854166507720947,
+  "vector_first10": [
+    0.017333984375,
+    0.101318359375,
+    0.0550537109375,
+    -0.063232421875,
+    -0.0107421875,
+    0.105712890625,
+    -0.016357421875,
+    0.01531982421875,
+    -0.1181640625,
+    0.02197265625
+  ],
+  "rows": [
+    {
+      "alpha": 0.0,
+      "prediction": "entertainment",
+      "match_gold": true,
+      "topk": [
+        [
+          "ent",
+          0.9996657371520996
+        ],
+        [
+          "style",
+          0.0003250328591093421
+        ],
+        [
+          "Ent",
+          4.155991973675555e-06
+        ],
+        [
+          "culture",
+          1.9940669062634697e-06
+        ],
+        [
+          "娱乐",
+          9.273272212340089e-07
+        ],
+        [
+          "entertainment",
+          9.129503837357333e-07
+        ],
+        [
+          "education",
+          3.204757490493648e-07
+        ],
+        [
+          "adult",
+          3.0580005727642856e-07
+        ],
+        [
+          "science",
+          2.2372812225057714e-07
+        ],
+        [
+          "healthy",
+          2.2025952262083592e-07
+        ]
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "prediction": "entertainment",
+      "match_gold": true,
+      "topk": [
+        [
+          "ent",
+          0.9996821880340576
+        ],
+        [
+          "style",
+          0.0003053451073355973
+        ],
+        [
+          "Ent",
+          5.505885837919777e-06
+        ],
+        [
+          "culture",
+          3.904257482645335e-06
+        ],
+        [
+          "娱乐",
+          9.71846475295024e-07
+        ],
+        [
+          "entertainment",
+          8.31264458156511e-07
+        ],
+        [
+          "education",
+          4.4494376538750657e-07
+        ],
+        [
+          "science",
+          2.872772597584117e-07
+        ],
+        [
+          "healthy",
+          2.495908404398506e-07
+        ],
+        [
+          "adult",
+          2.495908404398506e-07
+        ]
+      ]
+    },
+    {
+      "alpha": 1.0,
+      "prediction": "entertainment",
+      "match_gold": true,
+      "topk": [
+        [
+          "ent",
+          0.9996649026870728
+        ],
+        [
+          "style",
+          0.000315032375510782
+        ],
+        [
+          "culture",
+          9.513153599982616e-06
+        ],
+        [
+          "Ent",
+          6.9599714151991066e-06
+        ],
+        [
+          "娱乐",
+          1.0507985734875547e-06
+        ],
+        [
+          "entertainment",
+          7.931842560537916e-07
+        ],
+        [
+          "education",
+          6.177326099532365e-07
+        ],
+        [
+          "science",
+          3.988381536146335e-07
+        ],
+        [
+          "healthy",
+          3.106154338183842e-07
+        ],
+        [
+          "adult",
+          1.8839780580037768e-07
+        ]
+      ]
+    },
+    {
+      "alpha": 1.5,
+      "prediction": "entertainment",
+      "match_gold": true,
+      "topk": [
+        [
+          "ent",
+          0.9995648264884949
+        ],
+        [
+          "style",
+          0.0003920248709619045
+        ],
+        [
+          "culture",
+          3.118930908385664e-05
+        ],
+        [
+          "Ent",
+          7.763632311252877e-06
+        ],
+        [
+          "娱乐",
+          1.2283850310268463e-06
+        ],
+        [
+          "entertainment",
+          8.31166858006327e-07
+        ],
+        [
+          "education",
+          8.31166858006327e-07
+        ],
+        [
+          "science",
+          5.986670430502272e-07
+        ],
+        [
+          "healthy",
+          4.114574210234423e-07
+        ],
+        [
+          "travel",
+          1.2548743200113677e-07
+        ]
+      ]
+    },
+    {
+      "alpha": 2.0,
+      "prediction": "entertainment",
+      "match_gold": true,
+      "topk": [
+        [
+          "ent",
+          0.9992247819900513
+        ],
+        [
+          "style",
+          0.000606973422691226
+        ],
+        [
+          "culture",
+          0.00015346691361628473
+        ],
+        [
+          "Ent",
+          8.523780707037076e-06
+        ],
+        [
+          "娱乐",
+          1.576741055941966e-06
+        ],
+        [
+          "education",
+          1.3277489188112668e-06
+        ],
+        [
+          "science",
+          1.153568405243277e-06
+        ],
+        [
+          "entertainment",
+          8.983999464362569e-07
+        ],
+        [
+          "healthy",
+          6.996746151344269e-07
+        ],
+        [
+          "travel",
+          2.3436162166490249e-07
+        ]
+      ]
+    }
+  ],
+  "timestamp": "2026-05-01T15:04:02.248303"
+}

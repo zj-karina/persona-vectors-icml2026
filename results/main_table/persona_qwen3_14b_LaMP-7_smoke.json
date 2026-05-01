@@ -1,0 +1,39 @@
+{
+  "experiment": "persona_steering",
+  "llm": "Qwen/Qwen3-14B",
+  "task": "LaMP-7",
+  "config": {
+    "layer": 20,
+    "alpha": 1.0,
+    "n_positive": 3,
+    "n_negative": 3,
+    "n_questions": 1,
+    "extract_max_new_tokens": 50,
+    "smoke": true,
+    "smoke_n": 200
+  },
+  "result": {
+    "metric": "rouge",
+    "value": {
+      "ROUGE-1": 0.456142978618041,
+      "ROUGE-L": 0.4035196395684463
+    },
+    "num_eval": 200,
+    "sample_preds": [
+      "@Blitzscream shows love and warns of consequences if Silverbolt isn't returned.",
+      "I agree with @peyarili that there is hostility present, and I think the Indian media is making things worse for the students. It looks like the irresponsible",
+      "GiangcK is wondering whether to enjoy the view or read blogs, but no one knows the answer, and the person in charge isn't sharing their thoughts",
+      "JohnjayVanEs, I'm sorry to hear your boarding pass was lost and your flight is delayed. I hope things get better soon. Sending you a virtual",
+      "@TechBabe, I'm glad to see you. No sash this time, but you still deserve a pearl necklace. Just kidding, but for real"
+    ],
+    "sample_refs": [
+      "@Blitzscream Aaawww...  *huggles* If he doesn't bring Silverbolt back, he shall suffer my righteous wrath! &gt;:-[ ... er somthin'! :p",
+      "Resp @peyarili I agree, there is hatred, Ind Media is making things worse for the students, Looks like stupid media wants war against AUS",
+      "@GiangcK: a ?\u00ef\u00bf\u00bdu c\u00ef\u00bf\u00bd canh r?ng hay canh blog h?i n\u00ef\u00bf\u00bdo ?\u00ef\u00bf\u00bdu... m?y v? n\u00ef\u00bf\u00bdy m?nh ai n?y bi?t thui, anh ch? kh\u00ef\u00bf\u00bdng chia s? chi?n l\u00ef\u00bf\u00bdn m?ng v?i nhau",
+      "@JohnjayVanEs OMG JJ,sorry to hear that  first the boarding pass &amp;now a delayed flight  Hope things get better soon...hug",
+      "@TechBabe Glad you could make it  No, no sash, but you do get a pearlnecklace haha nah j/k butt seriously #babealert #oftheday   #MrJuly"
+    ]
+  },
+  "timestamp": "2026-05-01T01:50:40.038709",
+  "wall_seconds": 4479.402368783951
+}

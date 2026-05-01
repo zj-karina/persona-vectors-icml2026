@@ -1,0 +1,39 @@
+{
+  "experiment": "zero_shot_control",
+  "llm": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "task": "LaMP-3",
+  "config": {
+    "layer": 22,
+    "alpha": 0.0,
+    "n_positive": 3,
+    "n_negative": 3,
+    "n_questions": 2,
+    "extract_max_new_tokens": 60,
+    "smoke": true,
+    "smoke_n": 200
+  },
+  "result": {
+    "metric": "regression",
+    "value": {
+      "mae": 0.85,
+      "rmse": 1.5652475842498528
+    },
+    "num_eval": 200,
+    "sample_preds": [
+      "5",
+      "5",
+      "5",
+      "3",
+      "3"
+    ],
+    "sample_refs": [
+      "5",
+      "5",
+      "5",
+      "3",
+      "5"
+    ]
+  },
+  "timestamp": "2026-04-30T19:09:46.101666",
+  "wall_seconds": 73.42606616020203
+}

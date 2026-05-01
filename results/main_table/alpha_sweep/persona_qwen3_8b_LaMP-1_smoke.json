@@ -1,0 +1,44 @@
+{
+  "experiment": "persona_steering",
+  "llm": "Qwen/Qwen3-8B",
+  "task": "LaMP-1",
+  "config": {
+    "layer": 18,
+    "alpha": 1.5,
+    "n_positive": 3,
+    "n_negative": 3,
+    "n_questions": 1,
+    "extract_max_new_tokens": 50,
+    "smoke": true,
+    "smoke_n": 200
+  },
+  "result": {
+    "metric": "accuracy",
+    "value": {
+      "accuracy": 0.44,
+      "f1_weighted": 0.4155,
+      "f1_macro": 0.41666666666666663,
+      "precision_weighted": 0.43010457987738915,
+      "precision_macro": 0.43034018511840366,
+      "recall_weighted": 0.44,
+      "recall_macro": 0.44204420442044207
+    },
+    "num_eval": 200,
+    "sample_preds": [
+      "[2]",
+      "[1]",
+      "[2]",
+      "[2]",
+      "[2]"
+    ],
+    "sample_refs": [
+      "[2]",
+      "[2]",
+      "[1]",
+      "[1]",
+      "[2]"
+    ]
+  },
+  "timestamp": "2026-04-30T18:38:15.660559",
+  "wall_seconds": 1100.7091522216797
+}

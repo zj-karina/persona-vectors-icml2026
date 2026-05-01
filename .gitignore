@@ -1,0 +1,42 @@
+# Data (LaMP files are pulled separately / symlinked)
+data/
+*.pt
+*.bin
+*.safetensors
+saved/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv/
+venv/
+
+# Build / IDE
+.idea/
+.vscode/
+.DS_Store
+
+# Raw predictions & logs (large)
+results/raw_predictions/
+*.log
+logs/
+
+# LaTeX build artefacts
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.synctex.gz
+
+# Keep JSON results, PDFs, LaTeX source + bib
+!results/**/*.json
+!figures/**/*.pdf
+!paper/**/*.tex
+!paper/**/*.bib
+!paper/**/*.pdf

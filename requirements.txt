@@ -1,0 +1,13 @@
+torch>=2.0
+transformers>=4.48
+accelerate>=0.24
+bitsandbytes
+scikit-learn
+matplotlib
+numpy
+scipy
+tqdm
+rouge-score
+ijson
+PyYAML
+sentencepiece

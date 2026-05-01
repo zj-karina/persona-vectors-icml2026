@@ -1,0 +1,13 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{llccccc}
+\toprule
+Model & Task & Layer & $n$ & $\overline{\cos}_{\mathrm{off}}$ & $\overline{\|v\|/\|h\|}$ & PCA 2-PC \\
+\midrule
+Qwen3-14B & LaMP-2 & 10 & 100 & 0.921 & 0.063 & 58.0\% \\
+Qwen3-8B & LaMP-2 & 13 & 100 & 0.749 & 0.183 & 92.7\% \\
+\bottomrule
+\end{tabular}
+\caption{Per-user persona-vector geometry. Low cosine $\Rightarrow$ vectors are distinguishable. Low magnitude ratio $\Rightarrow$ steering signal is small relative to residual stream norm.}
+\label{tab:geometry}
+\end{table}

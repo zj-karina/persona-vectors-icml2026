@@ -1,0 +1,44 @@
+{
+  "experiment": "persona_steering",
+  "llm": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "task": "LaMP-1",
+  "config": {
+    "layer": 22,
+    "alpha": 2.0,
+    "n_positive": 3,
+    "n_negative": 3,
+    "n_questions": 1,
+    "extract_max_new_tokens": 50,
+    "smoke": true,
+    "smoke_n": 200
+  },
+  "result": {
+    "metric": "accuracy",
+    "value": {
+      "accuracy": 0.465,
+      "f1_weighted": 0.4352034233048058,
+      "f1_macro": 0.43647136273864384,
+      "precision_weighted": 0.45838280060882797,
+      "precision_macro": 0.4585235920852359,
+      "recall_weighted": 0.465,
+      "recall_macro": 0.4672967296729673
+    },
+    "num_eval": 200,
+    "sample_preds": [
+      "[2]",
+      "[1]",
+      "[2]",
+      "[2]",
+      "[2]"
+    ],
+    "sample_refs": [
+      "[2]",
+      "[2]",
+      "[1]",
+      "[1]",
+      "[2]"
+    ]
+  },
+  "timestamp": "2026-04-30T18:19:24.141603",
+  "wall_seconds": 841.2950019836426
+}

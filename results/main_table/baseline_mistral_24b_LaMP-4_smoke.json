@@ -1,0 +1,39 @@
+{
+  "experiment": "zero_shot_control",
+  "llm": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "task": "LaMP-4",
+  "config": {
+    "layer": 22,
+    "alpha": 0.0,
+    "n_positive": 3,
+    "n_negative": 3,
+    "n_questions": 2,
+    "extract_max_new_tokens": 60,
+    "smoke": true,
+    "smoke_n": 200
+  },
+  "result": {
+    "metric": "rouge",
+    "value": {
+      "ROUGE-1": 0.13323780923158637,
+      "ROUGE-L": 0.10943081938246961
+    },
+    "num_eval": 200,
+    "sample_preds": [
+      "Here are a few headline suggestions for the article:\n\n1. **\"From Drunk Texts to Acceptance: Surviving the Unexpected Journey of Being an Ex",
+      "Here are a few headline suggestions for the article:\n\n1. **\"Uoma Beauty's Sharon Chuter Launches Movement for Corporate Diversity Transparency\"**\n2",
+      "Here are a few headline suggestions for the article:\n\n1. **\"Aussie Model Graces Cosmopolitan Australia's March Cover, 2014",
+      "Here are a few headline suggestions for the article:\n\n1. **\"The Vanishing Art of Face-to-Face: A Reflection on Disappearing Connections\"",
+      "**\"The Gift of Life: How a Life-Saving Gift Transformed Thomas Awiapo's Journey from Orphan to Survivor\"**\n\nAlternatively, here are a"
+    ],
+    "sample_refs": [
+      "Finding Happiness After Divorce -- It Can Happen",
+      "Pull Up For Change Calls On Brands To Address Their Role In White Supremacy",
+      "Robyn Lawley's Cosmo Australia Cover Is Naturally Beautiful (PHOTOS)",
+      "The Hard Truth All Parents Of Teenagers Understand",
+      "School Meals Can Save A Life And Change The World"
+    ]
+  },
+  "timestamp": "2026-04-30T21:04:03.131943",
+  "wall_seconds": 583.2634890079498
+}

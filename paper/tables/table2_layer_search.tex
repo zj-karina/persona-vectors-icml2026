@@ -1,0 +1,13 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{llcccccc}
+\toprule
+Model & Task & $L$ & best & frac & metric@best & metric@ZS & $\Delta$ \\
+\midrule
+Qwen3-14B & LaMP-2 & 40 & 10 & 0.25 & 0.760 & 0.760 & +0.000 \\
+Qwen3-8B & LaMP-2 & 36 & 13 & 0.36 & 0.740 & 0.740 & +0.000 \\
+\bottomrule
+\end{tabular}
+\caption{Optimal extraction layer per (model, task), and effect over zero-shot.}
+\label{tab:layer_search}
+\end{table}

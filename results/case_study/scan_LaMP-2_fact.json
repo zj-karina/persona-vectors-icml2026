@@ -1,0 +1,632 @@
+[
+  {
+    "user_idx": 15,
+    "gold": "science & technology",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 3,
+    "preds": {
+      "0.0": "technology",
+      "1.0": "Science & Technology",
+      "2.0": "Sports & Science &"
+    },
+    "matches": {
+      "0.0": false,
+      "1.0": true,
+      "2.0": false
+    },
+    "P(gold) by α": {
+      "0.0": 0.0,
+      "1.0": 0.0,
+      "2.0": 0.0
+    }
+  },
+  {
+    "user_idx": 0,
+    "gold": "politics",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 2,
+    "preds": {
+      "0.0": "business",
+      "1.0": "crime",
+      "2.0": "crime"
+    },
+    "matches": {
+      "0.0": false,
+      "1.0": false,
+      "2.0": false
+    },
+    "P(gold) by α": {
+      "0.0": 0.0,
+      "1.0": 0.0,
+      "2.0": 0.0
+    }
+  },
+  {
+    "user_idx": 3,
+    "gold": "politics",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 2,
+    "preds": {
+      "0.0": "education",
+      "1.0": "politics",
+      "2.0": "politics"
+    },
+    "matches": {
+      "0.0": false,
+      "1.0": true,
+      "2.0": true
+    },
+    "P(gold) by α": {
+      "0.0": 0.0,
+      "1.0": 2.4299955839524046e-05,
+      "2.0": 2.3552425773232244e-05
+    }
+  },
+  {
+    "user_idx": 6,
+    "gold": "healthy living",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 2,
+    "preds": {
+      "0.0": "politics",
+      "1.0": "culture & arts",
+      "2.0": "culture & arts"
+    },
+    "matches": {
+      "0.0": false,
+      "1.0": false,
+      "2.0": false
+    },
+    "P(gold) by α": {
+      "0.0": 0.0,
+      "1.0": 0.0,
+      "2.0": 0.0
+    }
+  },
+  {
+    "user_idx": 7,
+    "gold": "business",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 2,
+    "preds": {
+      "0.0": "personal development",
+      "1.0": "entertainment",
+      "2.0": "entertainment"
+    },
+    "matches": {
+      "0.0": false,
+      "1.0": false,
+      "2.0": false
+    },
+    "P(gold) by α": {
+      "0.0": 0.0,
+      "1.0": 0.0,
+      "2.0": 0.0
+    }
+  },
+  {
+    "user_idx": 9,
+    "gold": "politics",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 2,
+    "preds": {
+      "0.0": "politics",
+      "1.0": "travel",
+      "2.0": "travel"
+    },
+    "matches": {
+      "0.0": true,
+      "1.0": false,
+      "2.0": false
+    },
+    "P(gold) by α": {
+      "0.0": 0.0,
+      "1.0": 0.0,
+      "2.0": 0.0
+    }
+  },
+  {
+    "user_idx": 14,
+    "gold": "healthy living",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 2,
+    "preds": {
+      "0.0": "healthy living",
+      "1.0": "culture & arts",
+      "2.0": "Culture & Arts"
+    },
+    "matches": {
+      "0.0": true,
+      "1.0": false,
+      "2.0": false
+    },
+    "P(gold) by α": {
+      "0.0": 0.0,
+      "1.0": 0.0,
+      "2.0": 0.0
+    }
+  },
+  {
+    "user_idx": 16,
+    "gold": "politics",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 2,
+    "preds": {
+      "0.0": "politics",
+      "1.0": "crime",
+      "2.0": "crime"
+    },
+    "matches": {
+      "0.0": true,
+      "1.0": false,
+      "2.0": false
+    },
+    "P(gold) by α": {
+      "0.0": 7.373075641226023e-05,
+      "1.0": 0.0,
+      "2.0": 0.0
+    }
+  },
+  {
+    "user_idx": 19,
+    "gold": "politics",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 2,
+    "preds": {
+      "0.0": "politics",
+      "1.0": "crime",
+      "2.0": "crime"
+    },
+    "matches": {
+      "0.0": true,
+      "1.0": false,
+      "2.0": false
+    },
+    "P(gold) by α": {
+      "0.0": 0.0,
+      "1.0": 0.0,
+      "2.0": 0.0
+    }
+  },
+  {
+    "user_idx": 24,
+    "gold": "politics",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 2,
+    "preds": {
+      "0.0": "politics",
+      "1.0": "politics",
+      "2.0": "entertainment"
+    },
+    "matches": {
+      "0.0": true,
+      "1.0": true,
+      "2.0": false
+    },
+    "P(gold) by α": {
+      "0.0": 0.00021093721443321556,
+      "1.0": 0.0006206922116689384,
+      "2.0": 0.00021067519264761358
+    }
+  },
+  {
+    "user_idx": 25,
+    "gold": "business",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 2,
+    "preds": {
+      "0.0": "business",
+      "1.0": "crime",
+      "2.0": "crime"
+    },
+    "matches": {
+      "0.0": true,
+      "1.0": false,
+      "2.0": false
+    },
+    "P(gold) by α": {
+      "0.0": 0.9988730549812317,
+      "1.0": 0.0,
+      "2.0": 0.0
+    }
+  },
+  {
+    "user_idx": 28,
+    "gold": "style & beauty",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 2,
+    "preds": {
+      "0.0": "parents",
+      "1.0": "entertainment",
+      "2.0": "entertainment"
+    },
+    "matches": {
+      "0.0": false,
+      "1.0": false,
+      "2.0": false
+    },
+    "P(gold) by α": {
+      "0.0": 0.0,
+      "1.0": 0.0,
+      "2.0": 0.0
+    }
+  },
+  {
+    "user_idx": 1,
+    "gold": "entertainment",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 1,
+    "preds": {
+      "0.0": "entertainment",
+      "1.0": "entertainment",
+      "2.0": "entertainment"
+    },
+    "matches": {
+      "0.0": true,
+      "1.0": true,
+      "2.0": true
+    },
+    "P(gold) by α": {
+      "0.0": 0.0,
+      "1.0": 0.0,
+      "2.0": 0.0
+    }
+  },
+  {
+    "user_idx": 2,
+    "gold": "entertainment",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 1,
+    "preds": {
+      "0.0": "entertainment",
+      "1.0": "entertainment",
+      "2.0": "entertainment"
+    },
+    "matches": {
+      "0.0": true,
+      "1.0": true,
+      "2.0": true
+    },
+    "P(gold) by α": {
+      "0.0": 2.269248761876952e-05,
+      "1.0": 1.0450528861838393e-05,
+      "2.0": 3.0115577942524396e-07
+    }
+  },
+  {
+    "user_idx": 4,
+    "gold": "entertainment",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 1,
+    "preds": {
+      "0.0": "entertainment",
+      "1.0": "entertainment",
+      "2.0": "entertainment"
+    },
+    "matches": {
+      "0.0": true,
+      "1.0": true,
+      "2.0": true
+    },
+    "P(gold) by α": {
+      "0.0": 1.522997372660484e-08,
+      "1.0": 1.262607973728791e-08,
+      "2.0": 1.0467352318244139e-08
+    }
+  },
+  {
+    "user_idx": 5,
+    "gold": "entertainment",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 1,
+    "preds": {
+      "0.0": "politics",
+      "1.0": "politics",
+      "2.0": "politics"
+    },
+    "matches": {
+      "0.0": false,
+      "1.0": false,
+      "2.0": false
+    },
+    "P(gold) by α": {
+      "0.0": 0.0,
+      "1.0": 0.0,
+      "2.0": 0.0
+    }
+  },
+  {
+    "user_idx": 8,
+    "gold": "politics",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 1,
+    "preds": {
+      "0.0": "politics",
+      "1.0": "politics",
+      "2.0": "politics"
+    },
+    "matches": {
+      "0.0": true,
+      "1.0": true,
+      "2.0": true
+    },
+    "P(gold) by α": {
+      "0.0": 5.771896667283727e-06,
+      "1.0": 1.3845949069946073e-05,
+      "2.0": 7.484595698770136e-05
+    }
+  },
+  {
+    "user_idx": 10,
+    "gold": "politics",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 1,
+    "preds": {
+      "0.0": "politics",
+      "1.0": "politics",
+      "2.0": "politics"
+    },
+    "matches": {
+      "0.0": true,
+      "1.0": true,
+      "2.0": true
+    },
+    "P(gold) by α": {
+      "0.0": 0.00022180663654580712,
+      "1.0": 0.0001230691559612751,
+      "2.0": 0.00011927504237974063
+    }
+  },
+  {
+    "user_idx": 11,
+    "gold": "politics",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 1,
+    "preds": {
+      "0.0": "religion",
+      "1.0": "religion",
+      "2.0": "religion"
+    },
+    "matches": {
+      "0.0": false,
+      "1.0": false,
+      "2.0": false
+    },
+    "P(gold) by α": {
+      "0.0": 0.0,
+      "1.0": 0.0,
+      "2.0": 2.4705355826881714e-05
+    }
+  },
+  {
+    "user_idx": 12,
+    "gold": "style & beauty",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 1,
+    "preds": {
+      "0.0": "style & beauty",
+      "1.0": "style & beauty",
+      "2.0": "style & beauty"
+    },
+    "matches": {
+      "0.0": true,
+      "1.0": true,
+      "2.0": true
+    },
+    "P(gold) by α": {
+      "0.0": 0.0,
+      "1.0": 0.0,
+      "2.0": 0.0
+    }
+  },
+  {
+    "user_idx": 13,
+    "gold": "religion",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 1,
+    "preds": {
+      "0.0": "religion",
+      "1.0": "religion",
+      "2.0": "religion"
+    },
+    "matches": {
+      "0.0": true,
+      "1.0": true,
+      "2.0": true
+    },
+    "P(gold) by α": {
+      "0.0": 5.894887067370291e-07,
+      "1.0": 6.464562716246292e-07,
+      "2.0": 6.196602839736443e-07
+    }
+  },
+  {
+    "user_idx": 17,
+    "gold": "politics",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 1,
+    "preds": {
+      "0.0": "crime",
+      "1.0": "crime",
+      "2.0": "crime"
+    },
+    "matches": {
+      "0.0": false,
+      "1.0": false,
+      "2.0": false
+    },
+    "P(gold) by α": {
+      "0.0": 0.0,
+      "1.0": 0.0,
+      "2.0": 0.0
+    }
+  },
+  {
+    "user_idx": 18,
+    "gold": "healthy living",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 1,
+    "preds": {
+      "0.0": "science & technology",
+      "1.0": "science & technology",
+      "2.0": "science & technology"
+    },
+    "matches": {
+      "0.0": false,
+      "1.0": false,
+      "2.0": false
+    },
+    "P(gold) by α": {
+      "0.0": 0.0,
+      "1.0": 0.0,
+      "2.0": 0.0
+    }
+  },
+  {
+    "user_idx": 20,
+    "gold": "sports",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 1,
+    "preds": {
+      "0.0": "sports",
+      "1.0": "sports",
+      "2.0": "sports"
+    },
+    "matches": {
+      "0.0": true,
+      "1.0": true,
+      "2.0": true
+    },
+    "P(gold) by α": {
+      "0.0": 0.8862784504890442,
+      "1.0": 0.6062009930610657,
+      "2.0": 0.606490433216095
+    }
+  },
+  {
+    "user_idx": 21,
+    "gold": "entertainment",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 1,
+    "preds": {
+      "0.0": "entertainment",
+      "1.0": "entertainment",
+      "2.0": "entertainment"
+    },
+    "matches": {
+      "0.0": true,
+      "1.0": true,
+      "2.0": true
+    },
+    "P(gold) by α": {
+      "0.0": 1.2751884526096546e-07,
+      "1.0": 1.5381678508674668e-07,
+      "2.0": 2.102415095350807e-07
+    }
+  },
+  {
+    "user_idx": 22,
+    "gold": "style & beauty",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 1,
+    "preds": {
+      "0.0": "style & beauty",
+      "1.0": "style & beauty",
+      "2.0": "style & beauty"
+    },
+    "matches": {
+      "0.0": true,
+      "1.0": true,
+      "2.0": true
+    },
+    "P(gold) by α": {
+      "0.0": 0.0,
+      "1.0": 0.0,
+      "2.0": 0.0
+    }
+  },
+  {
+    "user_idx": 23,
+    "gold": "politics",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 1,
+    "preds": {
+      "0.0": "crime",
+      "1.0": "crime",
+      "2.0": "crime"
+    },
+    "matches": {
+      "0.0": false,
+      "1.0": false,
+      "2.0": false
+    },
+    "P(gold) by α": {
+      "0.0": 1.2940998885824229e-06,
+      "1.0": 2.3107193101168377e-06,
+      "2.0": 4.574611011776142e-06
+    }
+  },
+  {
+    "user_idx": 26,
+    "gold": "sports",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 1,
+    "preds": {
+      "0.0": "sports",
+      "1.0": "sports",
+      "2.0": "sports"
+    },
+    "matches": {
+      "0.0": true,
+      "1.0": true,
+      "2.0": true
+    },
+    "P(gold) by α": {
+      "0.0": 0.9988645315170288,
+      "1.0": 0.9997895359992981,
+      "2.0": 0.9989878535270691
+    }
+  },
+  {
+    "user_idx": 27,
+    "gold": "healthy living",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 1,
+    "preds": {
+      "0.0": "business",
+      "1.0": "business",
+      "2.0": "business"
+    },
+    "matches": {
+      "0.0": false,
+      "1.0": false,
+      "2.0": false
+    },
+    "P(gold) by α": {
+      "0.0": 0.0,
+      "1.0": 0.0,
+      "2.0": 0.0
+    }
+  },
+  {
+    "user_idx": 29,
+    "gold": "education",
+    "input": "Which category does this article relate to among the following categories? Just answer with the category name without fu",
+    "n_distinct_preds": 1,
+    "preds": {
+      "0.0": "politics",
+      "1.0": "politics",
+      "2.0": "politics"
+    },
+    "matches": {
+      "0.0": false,
+      "1.0": false,
+      "2.0": false
+    },
+    "P(gold) by α": {
+      "0.0": 0.0,
+      "1.0": 0.0,
+      "2.0": 0.0
+    }
+  }
+]

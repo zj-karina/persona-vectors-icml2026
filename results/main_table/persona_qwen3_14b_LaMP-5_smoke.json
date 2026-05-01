@@ -1,0 +1,39 @@
+{
+  "experiment": "persona_steering",
+  "llm": "Qwen/Qwen3-14B",
+  "task": "LaMP-5",
+  "config": {
+    "layer": 20,
+    "alpha": 1.0,
+    "n_positive": 3,
+    "n_negative": 3,
+    "n_questions": 1,
+    "extract_max_new_tokens": 50,
+    "smoke": true,
+    "smoke_n": 200
+  },
+  "result": {
+    "metric": "rouge",
+    "value": {
+      "ROUGE-1": 0.43244487392822956,
+      "ROUGE-L": 0.36023712528568697
+    },
+    "num_eval": 200,
+    "sample_preds": [
+      "**\"A Link Reliability-Based Two-Hop Routing Protocol for Enhancing QoS in Wireless Sensor Networks\"**",
+      "**Title:**  \n**Leveraging Information Technology for Effective and Sustainable Learning: A Knowledge Transfer Perspective**",
+      "**Title:**  \n**Dual Alignment Network for Cross-Modal and Cross-Domain RGB-Infrared Person Re-Identification**",
+      "**\"Accelerating Inference-Based Discrete Optimization with GPU-Accelerated Parallel Architectures\"**",
+      "**\"Meta-barcoding: Challenges and Advances in Computational Analysis of High-Throughput Sequencing Data for Microbial Community Studies\"**"
+    ],
+    "sample_refs": [
+      "Link-Reliability Based Two-Hop Routing for Wireless Sensor Networks.",
+      "A Framework of Information Technology Supported Intelligent Learning Environment",
+      "Cross-Modal Cross-Domain Dual Alignment Network for RGB-Infrared Person Re-Identification",
+      "Accelerating Exact and Approximate Inference for (Distributed) Discrete Optimization with GPUs.",
+      "BioMaS: a modular pipeline for Bioinformatic analysis of Metagenomic AmpliconS"
+    ]
+  },
+  "timestamp": "2026-05-01T00:26:41.146374",
+  "wall_seconds": 4034.501200914383
+}

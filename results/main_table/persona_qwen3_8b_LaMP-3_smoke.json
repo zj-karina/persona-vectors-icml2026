@@ -1,0 +1,39 @@
+{
+  "experiment": "persona_steering",
+  "llm": "Qwen/Qwen3-8B",
+  "task": "LaMP-3",
+  "config": {
+    "layer": 18,
+    "alpha": 1.0,
+    "n_positive": 3,
+    "n_negative": 3,
+    "n_questions": 1,
+    "extract_max_new_tokens": 50,
+    "smoke": true,
+    "smoke_n": 200
+  },
+  "result": {
+    "metric": "regression",
+    "value": {
+      "mae": 0.9,
+      "rmse": 1.4106735979665885
+    },
+    "num_eval": 200,
+    "sample_preds": [
+      "5",
+      "5",
+      "4",
+      "3",
+      "3"
+    ],
+    "sample_refs": [
+      "5",
+      "5",
+      "5",
+      "3",
+      "5"
+    ]
+  },
+  "timestamp": "2026-04-30T19:19:31.075600",
+  "wall_seconds": 1167.917114496231
+}

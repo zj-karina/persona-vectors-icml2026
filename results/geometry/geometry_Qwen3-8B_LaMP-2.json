@@ -1,0 +1,31 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "task": "LaMP-2",
+  "layer_idx": 13,
+  "n_users": 100,
+  "cosine_similarity": {
+    "mean_off_diagonal": 0.7491264939308167,
+    "std_off_diagonal": 0.2276415228843689,
+    "median_off_diagonal": 0.8233107924461365,
+    "frac_above_0.5": 0.8084848484848485,
+    "frac_above_0.8": 0.5870707070707071,
+    "interpretation": "Highly redundant"
+  },
+  "magnitude": {
+    "mean_vector_norm": 11.427404403686523,
+    "std_vector_norm": 3.340277910232544,
+    "mean_residual_norm": 62.855773277282715,
+    "std_residual_norm": 4.005467485328886,
+    "mean_magnitude_ratio": 0.18276254820499271,
+    "std_magnitude_ratio": 0.054894030304965785,
+    "median_magnitude_ratio": 0.18753522200188144,
+    "interpretation": "|v|/|h| \u2248 18.3%; sufficient for steering"
+  },
+  "pca": {
+    "explained_variance_ratio": [
+      0.681916356086731,
+      0.24475045502185822
+    ],
+    "total_explained_2pc": 0.9266668111085892
+  }
+}

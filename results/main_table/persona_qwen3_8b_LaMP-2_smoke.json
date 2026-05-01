@@ -1,0 +1,44 @@
+{
+  "experiment": "persona_steering",
+  "llm": "Qwen/Qwen3-8B",
+  "task": "LaMP-2",
+  "config": {
+    "layer": 18,
+    "alpha": 1.0,
+    "n_positive": 3,
+    "n_negative": 3,
+    "n_questions": 1,
+    "extract_max_new_tokens": 50,
+    "smoke": true,
+    "smoke_n": 200
+  },
+  "result": {
+    "metric": "accuracy",
+    "value": {
+      "accuracy": 0.73,
+      "f1_weighted": 0.7627456501831503,
+      "f1_macro": 0.3743150946275946,
+      "precision_weighted": 0.8219088237344052,
+      "precision_macro": 0.3647603849638733,
+      "recall_weighted": 0.73,
+      "recall_macro": 0.4432455450733752
+    },
+    "num_eval": 200,
+    "sample_preds": [
+      "business",
+      "crime",
+      "crime",
+      "science & technology",
+      "business"
+    ],
+    "sample_refs": [
+      "politics",
+      "crime",
+      "crime",
+      "politics",
+      "politics"
+    ]
+  },
+  "timestamp": "2026-04-30T18:58:10.184491",
+  "wall_seconds": 1109.009302854538
+}

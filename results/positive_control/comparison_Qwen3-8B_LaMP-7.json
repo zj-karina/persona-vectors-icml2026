@@ -1,0 +1,122 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "task": "LaMP-7",
+  "metric": "rouge",
+  "layer_idx": 13,
+  "n_users": 30,
+  "alpha": 1.0,
+  "extraction_method": "local_llm_no_api",
+  "lamp_profile_format": "pre_formatted_strings (titles_p6)",
+  "geometry": {
+    "template": {
+      "label": "Template-based",
+      "n": 30,
+      "cosine": {
+        "mean": 0.41252124309539795,
+        "std": 0.13265399634838104,
+        "median": 0.40642693638801575,
+        "frac_above_0.5": 0.3103448275862069,
+        "frac_above_0.8": 0.0
+      },
+      "pca": {
+        "rank_90pct": 18,
+        "rank_95pct": 23,
+        "var_2pc": 0.2880929708480835,
+        "top10": [
+          0.14889709651470184,
+          0.13919587433338165,
+          0.10604765266180038,
+          0.07884381711483002,
+          0.061835017055273056,
+          0.05810568481683731,
+          0.053957946598529816,
+          0.038302402943372726,
+          0.03553302586078644,
+          0.03124132566154003
+        ]
+      },
+      "magnitude": {
+        "mean_norm": 7.707940578460693,
+        "std_norm": 2.490583896636963
+      },
+      "verdict": "PARTIAL \u2014 some user signal"
+    },
+    "fact_based": {
+      "label": "Fact-based",
+      "n": 30,
+      "cosine": {
+        "mean": 0.2522597014904022,
+        "std": 0.1333107054233551,
+        "median": 0.25715523958206177,
+        "frac_above_0.5": 0.034482758620689655,
+        "frac_above_0.8": 0.0
+      },
+      "pca": {
+        "rank_90pct": 19,
+        "rank_95pct": 23,
+        "var_2pc": 0.26742319762706757,
+        "top10": [
+          0.14857225120067596,
+          0.1188509464263916,
+          0.08941462635993958,
+          0.07930335402488708,
+          0.06671673059463501,
+          0.05490877479314804,
+          0.04668574407696724,
+          0.04082641378045082,
+          0.03958550840616226,
+          0.03394489735364914
+        ]
+      },
+      "magnitude": {
+        "mean_norm": 14.484406471252441,
+        "std_norm": 4.673854827880859
+      },
+      "verdict": "USER-SPECIFIC \u2713"
+    },
+    "cosine_delta": -0.16026154160499573,
+    "rank_90_delta": 1,
+    "hypothesis_supported": true
+  },
+  "downstream": {
+    "zero_shot": {
+      "value": {
+        "ROUGE-1": 0.4812576239611067,
+        "ROUGE-L": 0.4295081422612971
+      },
+      "primary": 0.4295081422612971
+    },
+    "template_steering": {
+      "value": {
+        "ROUGE-1": 0.475640615271752,
+        "ROUGE-L": 0.4300880356419004
+      },
+      "primary": 0.4300880356419004,
+      "delta": 0.0005798933806033246
+    },
+    "fact_steering": {
+      "value": {
+        "ROUGE-1": 0.4791909265665908,
+        "ROUGE-L": 0.4248543465245237
+      },
+      "primary": 0.4248543465245237,
+      "delta": -0.004653795736773381
+    }
+  },
+  "samples_for_inspection": [
+    {
+      "id": null,
+      "facts": "1. **Uses \"OOC\" as a consistent prefix for all tweets**, indicating a habitual pattern of prefacing messages with \"OOC\" (Out of Character), which is uncommon among most Twitter users and suggests a specific role-playing or narrative context.  \n\n2. **References specific characters from the Transformers Animated (TFA) universe**, such as Starscream, Slipstream, and Fire_flybot, indicating a strong familiarity with and engagement with that particular media franchise.  \n\n3. **Incorporates playful, expressive formatting and emoticons**, such as *high fives*, *hugs*, and *nods*, which are used in a stylized, almost theatrical manner, suggesting a unique approach to digital communication.  \n\n4. **Mentions specific fictional scenarios and plot elements**, such as \"Stormy rescue\" and \"Safeguard,\" which implies an active participation in or engagement with fan fiction, role-play, or narrative-driven online communities.  \n\n5. **References real-world logistical details in a fictional context**, such as \"doesn't have a 7-11 in the immediate area,\" blending humor with a sense of realism that is unusual in the context of character-based or role-playing tweets."
+    },
+    {
+      "id": null,
+      "facts": "1. **Uses explicit and emotionally charged language to describe political and military actions**, such as labeling the Sri Lankan government's actions as \"barbaric\" and equating the LTTE's recruitment of children with \"Genocide\" committed by a democratically elected leader.  \n\n2. **Focuses on the political and military conflict in Sri Lanka**, particularly referencing the Sri Lankan Civil War, the LTTE, and the Sri Lankan government's actions, including the final assault on the Tamil Tiger stronghold.  \n\n3. **Mentions specific media outlets and news reports**, such as the HT Channel News, to support claims about the humanitarian crisis in the No Fire Zone, indicating a pattern of citing particular sources for controversial narratives.  \n\n4. **Expresses a strong anti-establishment sentiment toward Sri Lankan political figures**, especially Rajapakshe, and frames Tamil aspirations as being systematically suppressed by the state, suggesting a consistent political stance against the ruling elite.  \n\n5. **Combines political commentary with informal, colloquial language and humor**, such as joking about beer and \"?????\" in a tweet, which contrasts with the serious tone of other tweets and suggests a unique blend of tone and style in their communication."
+    },
+    {
+      "id": null,
+      "facts": "1. **Uses Vietnamese in tweets with phonetic or transliterated spellings** \u2013 The user frequently incorporates Vietnamese text with non-standard or phonetic spellings (e.g., \"g?i\", \"c\u00ef\u00bf\u00bdi\", \"\u00ef\u00bf\u00bdo\"), suggesting a mix of native Vietnamese and possibly transliterated or misrendered text, which is uncommon in standard English-language Twitter activity.\n\n2. **Mentions technical API limitations and workarounds** \u2013 The user references API call limits and expresses frustration about needing to \"turn off\" or \"pause\" their account temporarily, indicating a technical background or familiarity with API usage in social media platforms.\n\n3. **Engages in playful, colloquial Vietnamese dialogue with specific slang** \u2013 The user uses phrases like \"hic\" (a Vietnamese expression of sadness or exasperation), \"th?ng em t?\" (a colloquial term for \"my girlfriend\"), and \"ru\" (a term for \"to soothe\" or \"to calm\"), suggesting a deep familiarity with and preference for informal, conversational Vietnamese.\n\n4. **References specific cultural or local phenomena** \u2013 The user mentions the \"Yanny vs. Laughter\" audio phenomenon, which is a globally recognized internet meme, but also references local Vietnamese cultural elements like \"m?a\" (rain), \"m?y\" (clouds), and \"tr\u00ef\u00bf\u00bdn t??ng\" (wall drilling), indicating a blend of global and local cultural awareness"
+    }
+  ],
+  "vectors_npz": "results/positive_control/vectors_Qwen3-8B_LaMP-7.npz",
+  "timestamp": "2026-05-01T15:24:27.617735"
+}

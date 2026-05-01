@@ -1,0 +1,30 @@
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Method} & \textbf{LaMP-1} & \textbf{LaMP-2} & \textbf{LaMP-3} & \textbf{LaMP-4} & \textbf{LaMP-5} & \textbf{LaMP-7} \\
+ & Acc$\uparrow$ & Acc$\uparrow$ & MAE$\downarrow$ & R-L$\uparrow$ & R-L$\uparrow$ & R-L$\uparrow$ \\
+\midrule
+\multicolumn{7}{l}{\textit{Trained baseline (Flan-T5-XXL, Q-Former)}} \\
+BehavioralTwin & 0.567 & 0.703 & 0.251 & 0.179 & 0.437 & 0.403 \\
+\midrule
+\multicolumn{7}{l}{\textit{Training-free: Qwen3-8B (frozen)}} \\
+Zero-shot & 0.420 & 0.765 & 0.800 & 0.129 & 0.338 & 0.425 \\
+Persona ($\alpha{=}1$) & 0.435 & 0.730 & 0.900 & 0.123 & 0.334 & 0.426 \\
+$\Delta$ & +0.015 & -0.035 & -0.100 & -0.006 & -0.004 & +0.001 \\
+\midrule
+\multicolumn{7}{l}{\textit{Training-free: Qwen3-14B (frozen)}} \\
+Zero-shot & 0.435 & 0.790 & 0.630 & 0.137 & 0.360 & 0.413 \\
+Persona ($\alpha{=}1$) & 0.420 & 0.805 & 0.655 & 0.131 & 0.360 & 0.404 \\
+$\Delta$ & -0.015 & +0.015 & -0.025 & -0.006 & -0.000 & -0.010 \\
+\midrule
+\multicolumn{7}{l}{\textit{Training-free: Mistral-Small-24B (frozen)}} \\
+Zero-shot & -- & 0.785 & 0.850 & 0.109 & -- & -- \\
+Persona ($\alpha{=}1$) & 0.465 & 0.785 & 0.850 & 0.104 & -- & -- \\
+$\Delta$ & -- & +0.000 & -0.000 & -0.006 & -- & -- \\
+\midrule
+\bottomrule
+\end{tabular}
+\caption{Main results. $\Delta$ rows show effect of persona steering on the primary metric (sign-corrected: positive = improvement). Smoke evaluation with $n{=}200$.}
+\label{tab:main}
+\end{table*}

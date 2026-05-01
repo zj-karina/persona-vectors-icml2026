@@ -1,0 +1,39 @@
+{
+  "experiment": "persona_steering",
+  "llm": "Qwen/Qwen3-8B",
+  "task": "LaMP-4",
+  "config": {
+    "layer": 18,
+    "alpha": 1.0,
+    "n_positive": 3,
+    "n_negative": 3,
+    "n_questions": 1,
+    "extract_max_new_tokens": 50,
+    "smoke": true,
+    "smoke_n": 200
+  },
+  "result": {
+    "metric": "rouge",
+    "value": {
+      "ROUGE-1": 0.1385582443544118,
+      "ROUGE-L": 0.1229767392819419
+    },
+    "num_eval": 200,
+    "sample_preds": [
+      "\"From Kicking and Screaming to Surviving the Unexpected: My Ex-Wife Story\"",
+      "\"Sharon Chuter Sparks Movement for Transparency: Uoma Beauty Founder Pushes Brands to Disclose Black Leadership Numbers\"",
+      "\"New Icon on the Rise: Aussie Model Shines on Cosmopolitan Australia's March Cover\"",
+      "\"Vanishing in Sight: A Quiet Reflection on the People We've Lost\"",
+      "**\"The Gift That Saved His Life: How Orphan Thomas Awiapo Found Hope in the Unlikely Hands of Kindness\"**"
+    ],
+    "sample_refs": [
+      "Finding Happiness After Divorce -- It Can Happen",
+      "Pull Up For Change Calls On Brands To Address Their Role In White Supremacy",
+      "Robyn Lawley's Cosmo Australia Cover Is Naturally Beautiful (PHOTOS)",
+      "The Hard Truth All Parents Of Teenagers Understand",
+      "School Meals Can Save A Life And Change The World"
+    ]
+  },
+  "timestamp": "2026-04-30T20:07:49.718742",
+  "wall_seconds": 2785.72664809227
+}

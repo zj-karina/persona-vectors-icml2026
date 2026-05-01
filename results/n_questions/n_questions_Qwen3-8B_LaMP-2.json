@@ -1,0 +1,71 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "task": "LaMP-2",
+  "n_samples": 50,
+  "alpha": 1.0,
+  "layer_idx": 13,
+  "seed": 42,
+  "results": [
+    {
+      "n_questions": 1,
+      "metric": "accuracy",
+      "value": {
+        "accuracy": 0.74,
+        "f1_weighted": 0.7616666666666666,
+        "f1_macro": 0.38611111111111107,
+        "precision_weighted": 0.8252525252525252,
+        "precision_macro": 0.39898989898989895,
+        "recall_weighted": 0.74,
+        "recall_macro": 0.39682539682539686
+      },
+      "wall_seconds": 98.2907042503357,
+      "num_eval": 50
+    },
+    {
+      "n_questions": 3,
+      "metric": "accuracy",
+      "value": {
+        "accuracy": 0.7,
+        "f1_weighted": 0.7280477408354646,
+        "f1_macro": 0.3760727479397556,
+        "precision_weighted": 0.8143636363636364,
+        "precision_macro": 0.39121212121212123,
+        "recall_weighted": 0.7,
+        "recall_macro": 0.3894179894179894
+      },
+      "wall_seconds": 254.6370255947113,
+      "num_eval": 50
+    },
+    {
+      "n_questions": 5,
+      "metric": "accuracy",
+      "value": {
+        "accuracy": 0.7,
+        "f1_weighted": 0.7280477408354646,
+        "f1_macro": 0.3760727479397556,
+        "precision_weighted": 0.8143636363636364,
+        "precision_macro": 0.39121212121212123,
+        "recall_weighted": 0.7,
+        "recall_macro": 0.3894179894179894
+      },
+      "wall_seconds": 437.241171836853,
+      "num_eval": 50
+    },
+    {
+      "n_questions": 10,
+      "metric": "accuracy",
+      "value": {
+        "accuracy": 0.7,
+        "f1_weighted": 0.724046783625731,
+        "f1_macro": 0.38146198830409356,
+        "precision_weighted": 0.8507575757575758,
+        "precision_macro": 0.421969696969697,
+        "recall_weighted": 0.7,
+        "recall_macro": 0.4
+      },
+      "wall_seconds": 866.8553891181946,
+      "num_eval": 50
+    }
+  ],
+  "timestamp": "2026-05-01T13:07:45.602051"
+}

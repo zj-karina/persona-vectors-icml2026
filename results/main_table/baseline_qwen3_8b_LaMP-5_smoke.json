@@ -1,0 +1,39 @@
+{
+  "experiment": "zero_shot_control",
+  "llm": "Qwen/Qwen3-8B",
+  "task": "LaMP-5",
+  "config": {
+    "layer": 18,
+    "alpha": 0.0,
+    "n_positive": 3,
+    "n_negative": 3,
+    "n_questions": 2,
+    "extract_max_new_tokens": 60,
+    "smoke": true,
+    "smoke_n": 200
+  },
+  "result": {
+    "metric": "rouge",
+    "value": {
+      "ROUGE-1": 0.4144977235763445,
+      "ROUGE-L": 0.33792893381354716
+    },
+    "num_eval": 200,
+    "sample_preds": [
+      "**Title:** Enhancing QoS in Wireless Sensor Networks: A Link Reliability-Based Two-Hop Routing Protocol for Real-Time Applications",
+      "**Title:** *Enhancing Learning Through Information Technology: A Framework for Effective and Sustained Knowledge Transfer*",
+      "**Title:** Dual Alignment Network for Cross-Modal Cross-Domain Person Re-Identification",
+      "**Title:** *Accelerating Discrete Optimization with GPU-Based Inference Techniques*",
+      "**Title:** *Meta-barcoding in Metagenomics: Challenges and Opportunities in High-Throughput Sequencing Data Analysis*"
+    ],
+    "sample_refs": [
+      "Link-Reliability Based Two-Hop Routing for Wireless Sensor Networks.",
+      "A Framework of Information Technology Supported Intelligent Learning Environment",
+      "Cross-Modal Cross-Domain Dual Alignment Network for RGB-Infrared Person Re-Identification",
+      "Accelerating Exact and Approximate Inference for (Distributed) Discrete Optimization with GPUs.",
+      "BioMaS: a modular pipeline for Bioinformatic analysis of Metagenomic AmpliconS"
+    ]
+  },
+  "timestamp": "2026-04-30T21:29:13.657988",
+  "wall_seconds": 420.12980794906616
+}

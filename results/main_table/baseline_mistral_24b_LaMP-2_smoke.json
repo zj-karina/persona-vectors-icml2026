@@ -1,0 +1,44 @@
+{
+  "experiment": "zero_shot_control",
+  "llm": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "task": "LaMP-2",
+  "config": {
+    "layer": 22,
+    "alpha": 0.0,
+    "n_positive": 3,
+    "n_negative": 3,
+    "n_questions": 2,
+    "extract_max_new_tokens": 60,
+    "smoke": true,
+    "smoke_n": 200
+  },
+  "result": {
+    "metric": "accuracy",
+    "value": {
+      "accuracy": 0.785,
+      "f1_weighted": 0.805626238148207,
+      "f1_macro": 0.3543448443132302,
+      "precision_weighted": 0.8472060086921367,
+      "precision_macro": 0.36765437319800415,
+      "recall_weighted": 0.785,
+      "recall_macro": 0.3841608738828202
+    },
+    "num_eval": 200,
+    "sample_preds": [
+      "politics",
+      "crime",
+      "crime",
+      "science &",
+      "politics"
+    ],
+    "sample_refs": [
+      "politics",
+      "crime",
+      "crime",
+      "politics",
+      "politics"
+    ]
+  },
+  "timestamp": "2026-04-30T18:56:10.524326",
+  "wall_seconds": 87.63889026641846
+}

@@ -1,0 +1,420 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "task": "LaMP-2",
+  "layer_idx": 13,
+  "user_idx": 3,
+  "variant": "fact",
+  "alphas": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5,
+    2.0
+  ],
+  "gold": "politics",
+  "input_text": "Which category does this article relate to among the following categories? Just answer with the category name without further explanation. categories: [travel, education, parents, style & beauty, entertainment, food & drink, science & technology, business, sports, healthy living, women, politics, crime, culture & arts, religion] article: The education secretary's new Title IX rule adds protections for the accused and lets schools skirt responsibility for assaults entirely if they take place off-campus.",
+  "facts_text": "1. The user has consistently categorized multiple articles related to humor and social media, specifically focusing on \"The 20 Funniest Tweets From Women This Week\" three times, indicating a repeated interest in humor, particularly from female voices on social media platforms.\n\n2. The user has shown a strong interest in content related to body positivity and mental health, as evidenced by their categorization of \"Eating Disorder Survivor Bravely Undresses In Public To Promote Body Love.\"\n\n3. The user has engaged with content that addresses gender and societal issues, such as \"Jill Soloway Has A Simple Fix For Ending Hollywood Sexism,\" suggesting an interest in feminist discourse and media representation.\n\n4. The user has categorized articles that highlight personal stories and emotional vulnerability, such as \"Why I'm So Grateful For My 'Soccer Mom' Dad,\" indicating a preference for narrative-driven, introspective content.\n\n5. The user has a pattern of revisiting and categorizing the same article multiple times, such as \"The 20 Funniest Tweets From Women This Week\" appearing three times in their history, which is unusual and suggests either a specific interest in that content or a possible system error or repeated interaction with the same article.",
+  "profile": [
+    "MOVIE: \"Why I'm So Grateful For My 'Soccer Mom' Dad\"",
+    "MOVIE: \"Jill Soloway Has A Simple Fix For Ending Hollywood Sexism\"",
+    "MOVIE: \"The 20 Funniest Tweets From Women This Week\"",
+    "MOVIE: \"Eating Disorder Survivor Bravely Undresses In Public To Promote Body Love\"",
+    "MOVIE: \"The 20 Funniest Tweets From Women This Week\"",
+    "MOVIE: \"The 20 Funniest Tweets From Women This Week\""
+  ],
+  "vector_norm": 27.6306209564209,
+  "vector_first10": [
+    -0.276702880859375,
+    0.293975830078125,
+    -0.685546875,
+    -0.1622314453125,
+    0.10205078125,
+    -0.25390625,
+    -0.350677490234375,
+    0.2264404296875,
+    0.519287109375,
+    0.09033203125
+  ],
+  "rows": [
+    {
+      "alpha": 0.0,
+      "prediction": "education",
+      "match_gold": false,
+      "topk": [
+        [
+          "education",
+          0.9999998807907104
+        ],
+        [
+          "Education",
+          9.625642150012936e-08
+        ],
+        [
+          "education",
+          5.430416116780634e-09
+        ],
+        [
+          "教育",
+          2.1265813554549595e-09
+        ],
+        [
+          "educ",
+          1.0923713322785744e-10
+        ],
+        [
+          "pol",
+          6.625566761897517e-11
+        ],
+        [
+          "parents",
+          3.6228860623294112e-12
+        ],
+        [
+          "culture",
+          2.0642582695268308e-12
+        ],
+        [
+          "science",
+          2.000747874666975e-12
+        ],
+        [
+          "ent",
+          7.713569908675277e-13
+        ]
+      ]
+    },
+    {
+      "alpha": 0.25,
+      "prediction": "education",
+      "match_gold": false,
+      "topk": [
+        [
+          "education",
+          0.9999973773956299
+        ],
+        [
+          "pol",
+          2.19078083318891e-06
+        ],
+        [
+          "Education",
+          3.927853242657875e-07
+        ],
+        [
+          "education",
+          2.147765698623516e-08
+        ],
+        [
+          "教育",
+          1.0799643845871287e-08
+        ],
+        [
+          "Politics",
+          4.6448693780121175e-09
+        ],
+        [
+          "politics",
+          2.093606399355963e-09
+        ],
+        [
+          "political",
+          1.8766970200090327e-09
+        ],
+        [
+          "educ",
+          1.156199469498631e-09
+        ],
+        [
+          "parents",
+          9.436623704672797e-10
+        ]
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "prediction": "education",
+      "match_gold": false,
+      "topk": [
+        [
+          "education",
+          0.6991544365882874
+        ],
+        [
+          "pol",
+          0.30070260167121887
+        ],
+        [
+          "Politics",
+          6.11834620940499e-05
+        ],
+        [
+          "politics",
+          5.74765435885638e-05
+        ],
+        [
+          "political",
+          1.1317802091070917e-05
+        ],
+        [
+          "polit",
+          1.0304976058250759e-05
+        ],
+        [
+          "Education",
+          1.9667393189592985e-06
+        ],
+        [
+          "parents",
+          5.051003881817451e-07
+        ],
+        [
+          "教育",
+          6.032564670022111e-08
+        ],
+        [
+          "education",
+          5.00117103285902e-08
+        ]
+      ]
+    },
+    {
+      "alpha": 0.75,
+      "prediction": "politics",
+      "match_gold": true,
+      "topk": [
+        [
+          "pol",
+          0.9999032020568848
+        ],
+        [
+          "Politics",
+          3.4266347938682884e-05
+        ],
+        [
+          "politics",
+          3.219025529688224e-05
+        ],
+        [
+          "education",
+          2.212401886936277e-05
+        ],
+        [
+          "polit",
+          6.143617611087393e-06
+        ],
+        [
+          "political",
+          2.123177409885102e-06
+        ],
+        [
+          "parents",
+          6.972117994052951e-09
+        ],
+        [
+          "POLIT",
+          2.564898737844601e-09
+        ],
+        [
+          "culture",
+          2.4859849734326644e-09
+        ],
+        [
+          "Politics",
+          1.2115725089856255e-09
+        ]
+      ]
+    },
+    {
+      "alpha": 1.0,
+      "prediction": "politics",
+      "match_gold": true,
+      "topk": [
+        [
+          "pol",
+          0.9999639987945557
+        ],
+        [
+          "Politics",
+          2.4299955839524046e-05
+        ],
+        [
+          "politics",
+          9.818069884204306e-06
+        ],
+        [
+          "polit",
+          1.6027557876441278e-06
+        ],
+        [
+          "political",
+          2.873582616302883e-07
+        ],
+        [
+          "education",
+          1.906186986033731e-09
+        ],
+        [
+          "Politics",
+          5.905091415847608e-10
+        ],
+        [
+          "crime",
+          4.972585676554786e-10
+        ],
+        [
+          "culture",
+          3.872653586700636e-10
+        ],
+        [
+          "POLIT",
+          2.7893676257662037e-10
+        ]
+      ]
+    },
+    {
+      "alpha": 1.25,
+      "prediction": "politics",
+      "match_gold": true,
+      "topk": [
+        [
+          "pol",
+          0.9999724626541138
+        ],
+        [
+          "Politics",
+          2.4300161385326646e-05
+        ],
+        [
+          "politics",
+          2.7264027266937774e-06
+        ],
+        [
+          "polit",
+          4.592011180193367e-07
+        ],
+        [
+          "political",
+          4.9935806600842625e-08
+        ],
+        [
+          "Politics",
+          3.638052081811338e-10
+        ],
+        [
+          "crime",
+          3.471453680070624e-10
+        ],
+        [
+          "Pol",
+          1.0754061530171555e-10
+        ],
+        [
+          "政治",
+          1.0423193558262156e-10
+        ],
+        [
+          "culture",
+          7.991739908730366e-11
+        ]
+      ]
+    },
+    {
+      "alpha": 1.5,
+      "prediction": "politics",
+      "match_gold": true,
+      "topk": [
+        [
+          "pol",
+          0.9999686479568481
+        ],
+        [
+          "Politics",
+          3.0241924832807854e-05
+        ],
+        [
+          "politics",
+          8.85129963990039e-07
+        ],
+        [
+          "polit",
+          2.2379590802756866e-07
+        ],
+        [
+          "political",
+          1.72572871548482e-08
+        ],
+        [
+          "Pol",
+          4.5276118965098533e-10
+        ],
+        [
+          "crime",
+          3.526107461571115e-10
+        ],
+        [
+          "Politics",
+          2.969280377129735e-10
+        ],
+        [
+          "Polit",
+          1.1270117478145991e-10
+        ],
+        [
+          ".pol",
+          1.0923371929205672e-10
+        ]
+      ]
+    },
+    {
+      "alpha": 2.0,
+      "prediction": "politics",
+      "match_gold": true,
+      "topk": [
+        [
+          "pol",
+          0.9999681711196899
+        ],
+        [
+          "politics",
+          2.3552425773232244e-05
+        ],
+        [
+          "Politics",
+          7.646352059964556e-06
+        ],
+        [
+          "polit",
+          2.785183710329875e-07
+        ],
+        [
+          "(pol",
+          9.042167192774286e-08
+        ],
+        [
+          ".pol",
+          7.152943481969487e-08
+        ],
+        [
+          "political",
+          3.828694516982978e-08
+        ],
+        [
+          "crime",
+          1.6726326990124107e-08
+        ],
+        [
+          "Politics",
+          3.506028800615013e-09
+        ],
+        [
+          "-pol",
+          3.3454758963102904e-09
+        ]
+      ]
+    }
+  ],
+  "timestamp": "2026-05-01T15:06:37.877198"
+}

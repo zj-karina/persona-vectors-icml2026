@@ -1,0 +1,215 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "task": "LaMP-2",
+  "n_samples": 200,
+  "layer_idx": 13,
+  "seed": 42,
+  "alphas": [
+    0.0,
+    0.5,
+    1.0,
+    2.0,
+    4.0,
+    8.0,
+    16.0
+  ],
+  "results": [
+    {
+      "alpha": 0.0,
+      "metric": "accuracy",
+      "value": {
+        "accuracy": 0.76,
+        "f1_weighted": 0.780764173398194,
+        "f1_macro": 0.3313799180863749,
+        "precision_weighted": 0.8265281385281387,
+        "precision_macro": 0.32931191615402144,
+        "recall_weighted": 0.76,
+        "recall_macro": 0.3803928059141565
+      },
+      "wall_seconds": 41.96339726448059,
+      "sample_preds": [
+        "business",
+        "crime",
+        "crime",
+        "science & technology",
+        "business"
+      ],
+      "sample_refs": [
+        "politics",
+        "crime",
+        "crime",
+        "politics",
+        "politics"
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "metric": "accuracy",
+      "value": {
+        "accuracy": 0.77,
+        "f1_weighted": 0.7897721867504477,
+        "f1_macro": 0.3492406412696268,
+        "precision_weighted": 0.83222539632652,
+        "precision_macro": 0.34360146719697277,
+        "recall_weighted": 0.77,
+        "recall_macro": 0.40257395760540415
+      },
+      "wall_seconds": 42.133867502212524,
+      "sample_preds": [
+        "business",
+        "crime",
+        "crime",
+        "science & technology",
+        "business"
+      ],
+      "sample_refs": [
+        "politics",
+        "crime",
+        "crime",
+        "politics",
+        "politics"
+      ]
+    },
+    {
+      "alpha": 1.0,
+      "metric": "accuracy",
+      "value": {
+        "accuracy": 0.78,
+        "f1_weighted": 0.7975722332145145,
+        "f1_macro": 0.37427182309939233,
+        "precision_weighted": 0.8361557189029967,
+        "precision_macro": 0.36283532488293885,
+        "recall_weighted": 0.78,
+        "recall_macro": 0.4273646565544457
+      },
+      "wall_seconds": 42.270060300827026,
+      "sample_preds": [
+        "business",
+        "crime",
+        "crime",
+        "science & technology",
+        "politics"
+      ],
+      "sample_refs": [
+        "politics",
+        "crime",
+        "crime",
+        "politics",
+        "politics"
+      ]
+    },
+    {
+      "alpha": 2.0,
+      "metric": "accuracy",
+      "value": {
+        "accuracy": 0.745,
+        "f1_weighted": 0.7737742192018507,
+        "f1_macro": 0.3063250853272783,
+        "precision_weighted": 0.8265082688846733,
+        "precision_macro": 0.3058375353319174,
+        "recall_weighted": 0.745,
+        "recall_macro": 0.3425701307776779
+      },
+      "wall_seconds": 42.4341983795166,
+      "sample_preds": [
+        "business",
+        "culture & arts",
+        "crime",
+        "science & technology",
+        "politics"
+      ],
+      "sample_refs": [
+        "politics",
+        "crime",
+        "crime",
+        "politics",
+        "politics"
+      ]
+    },
+    {
+      "alpha": 4.0,
+      "metric": "accuracy",
+      "value": {
+        "accuracy": 0.545,
+        "f1_weighted": 0.6520765947888588,
+        "f1_macro": 0.16875590342571473,
+        "precision_weighted": 0.8362525792188652,
+        "precision_macro": 0.20840135668801846,
+        "recall_weighted": 0.545,
+        "recall_macro": 0.15243509111433637
+      },
+      "wall_seconds": 40.48064112663269,
+      "sample_preds": [
+        "Culture & Arts",
+        "Culture & Arts",
+        "Crime",
+        "Culture & Arts",
+        "Culture & Arts"
+      ],
+      "sample_refs": [
+        "politics",
+        "crime",
+        "crime",
+        "politics",
+        "politics"
+      ]
+    },
+    {
+      "alpha": 8.0,
+      "metric": "accuracy",
+      "value": {
+        "accuracy": 0.16,
+        "f1_weighted": 0.1943796296296296,
+        "f1_macro": 0.046333498677248675,
+        "precision_weighted": 0.8616666666666666,
+        "precision_macro": 0.10995370370370369,
+        "recall_weighted": 0.16,
+        "recall_macro": 0.04607573375262054
+      },
+      "wall_seconds": 38.819119453430176,
+      "sample_preds": [
+        "*( * #",
+        "*( * #",
+        "*( * #",
+        "*( * #",
+        "*( * #"
+      ],
+      "sample_refs": [
+        "politics",
+        "crime",
+        "crime",
+        "politics",
+        "politics"
+      ]
+    },
+    {
+      "alpha": 16.0,
+      "metric": "accuracy",
+      "value": {
+        "accuracy": 0.0,
+        "f1_weighted": 0.0,
+        "f1_macro": 0.0,
+        "precision_weighted": 0.0,
+        "precision_macro": 0.0,
+        "recall_weighted": 0.0,
+        "recall_macro": 0.0
+      },
+      "wall_seconds": 42.24012327194214,
+      "sample_preds": [
+        "*( *( *(",
+        "*( *( *(",
+        "*( *( *(",
+        "*( *( *(",
+        "*( *( *("
+      ],
+      "sample_refs": [
+        "politics",
+        "crime",
+        "crime",
+        "politics",
+        "politics"
+      ]
+    }
+  ],
+  "timestamp": "2026-05-01T12:35:17.678164"
+}

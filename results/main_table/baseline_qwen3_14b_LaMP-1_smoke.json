@@ -1,0 +1,44 @@
+{
+  "experiment": "zero_shot_control",
+  "llm": "Qwen/Qwen3-14B",
+  "task": "LaMP-1",
+  "config": {
+    "layer": 20,
+    "alpha": 0.0,
+    "n_positive": 3,
+    "n_negative": 3,
+    "n_questions": 2,
+    "extract_max_new_tokens": 60,
+    "smoke": true,
+    "smoke_n": 200
+  },
+  "result": {
+    "metric": "accuracy",
+    "value": {
+      "accuracy": 0.435,
+      "f1_weighted": 0.42930129679718904,
+      "f1_macro": 0.42870143330215627,
+      "precision_weighted": 0.4314375,
+      "precision_macro": 0.43125,
+      "recall_weighted": 0.435,
+      "recall_macro": 0.43399339933993397
+    },
+    "num_eval": 200,
+    "sample_preds": [
+      "[2]",
+      "[1]",
+      "[2]",
+      "[2]",
+      "[2]"
+    ],
+    "sample_refs": [
+      "[2]",
+      "[2]",
+      "[1]",
+      "[1]",
+      "[2]"
+    ]
+  },
+  "timestamp": "2026-04-30T21:59:41.091625",
+  "wall_seconds": 65.34896183013916
+}

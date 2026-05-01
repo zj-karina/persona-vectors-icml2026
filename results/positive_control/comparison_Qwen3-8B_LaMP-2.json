@@ -1,0 +1,137 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "task": "LaMP-2",
+  "metric": "accuracy",
+  "layer_idx": 13,
+  "n_users": 30,
+  "alpha": 1.0,
+  "extraction_method": "local_llm_no_api",
+  "lamp_profile_format": "pre_formatted_strings (titles_p6)",
+  "geometry": {
+    "template": {
+      "label": "Template-based",
+      "n": 30,
+      "cosine": {
+        "mean": 0.32872965931892395,
+        "std": 0.25901728868484497,
+        "median": 0.2075919508934021,
+        "frac_above_0.5": 0.34022988505747126,
+        "frac_above_0.8": 0.02528735632183908
+      },
+      "pca": {
+        "rank_90pct": 9,
+        "rank_95pct": 11,
+        "var_2pc": 0.37395501136779785,
+        "top10": [
+          0.20436595380306244,
+          0.1695890575647354,
+          0.14597010612487793,
+          0.12300100922584534,
+          0.06774140149354935,
+          0.06386920064687729,
+          0.05503876134753227,
+          0.04780646041035652,
+          0.031364258378744125,
+          0.026543747633695602
+        ]
+      },
+      "magnitude": {
+        "mean_norm": 11.829602241516113,
+        "std_norm": 7.88421106338501
+      },
+      "verdict": "USER-SPECIFIC \u2713"
+    },
+    "fact_based": {
+      "label": "Fact-based",
+      "n": 30,
+      "cosine": {
+        "mean": 0.3345501720905304,
+        "std": 0.2640586495399475,
+        "median": 0.2496248036623001,
+        "frac_above_0.5": 0.3218390804597701,
+        "frac_above_0.8": 0.020689655172413793
+      },
+      "pca": {
+        "rank_90pct": 7,
+        "rank_95pct": 11,
+        "var_2pc": 0.5955319106578827,
+        "top10": [
+          0.33089038729667664,
+          0.26464152336120605,
+          0.12364153563976288,
+          0.06799530237913132,
+          0.05693228915333748,
+          0.052457962185144424,
+          0.02260136604309082,
+          0.013895533978939056,
+          0.009844256564974785,
+          0.006766858510673046
+        ]
+      },
+      "magnitude": {
+        "mean_norm": 14.682015419006348,
+        "std_norm": 8.93228816986084
+      },
+      "verdict": "USER-SPECIFIC \u2713"
+    },
+    "cosine_delta": 0.005820512771606445,
+    "rank_90_delta": -2,
+    "hypothesis_supported": false
+  },
+  "downstream": {
+    "zero_shot": {
+      "value": {
+        "accuracy": 0.5666666666666667,
+        "f1_weighted": 0.6170370370370368,
+        "f1_macro": 0.3658119658119658,
+        "precision_weighted": 0.75,
+        "precision_macro": 0.4230769230769231,
+        "recall_weighted": 0.5666666666666667,
+        "recall_macro": 0.36631701631701635
+      },
+      "primary": 0.5666666666666667
+    },
+    "template_steering": {
+      "value": {
+        "accuracy": 0.5333333333333333,
+        "f1_weighted": 0.5393567251461988,
+        "f1_macro": 0.41802232854864435,
+        "precision_weighted": 0.5813492063492063,
+        "precision_macro": 0.4231601731601732,
+        "recall_weighted": 0.5333333333333333,
+        "recall_macro": 0.45564738292011026
+      },
+      "primary": 0.5333333333333333,
+      "delta": -0.033333333333333326
+    },
+    "fact_steering": {
+      "value": {
+        "accuracy": 0.43333333333333335,
+        "f1_weighted": 0.4626500297088532,
+        "f1_macro": 0.2818867407102701,
+        "precision_weighted": 0.5388888888888889,
+        "precision_macro": 0.2948717948717948,
+        "recall_weighted": 0.43333333333333335,
+        "recall_macro": 0.29463869463869463
+      },
+      "primary": 0.43333333333333335,
+      "delta": -0.1333333333333333
+    }
+  },
+  "samples_for_inspection": [
+    {
+      "id": null,
+      "facts": "1. The user has categorized a mix of crime-related and emotionally resonant content, including violent crimes (e.g., \"Man Busted For Selling Drugs And Stolen Guns From Driveway, Feds Say\") and heartwarming family moments (e.g., \"Baby's Sleepy Photo Shoot With Santa Will Melt Your Heart\"), indicating a unique interest in contrasting human behavior and outcomes.\n\n2. The user has shown a specific interest in true crime and real-life legal cases, such as \"Former Prosecutor Helps Teen Who Was Given Life Sentence Win Release After 20 Years,\" suggesting a focus on justice, redemption, and legal processes in real-world contexts.\n\n3. The user has categorized content involving surveillance and hidden crimes, such as \"Suspected Purse Snatcher Filmed Running Over, Killing Woman\" and \"Video Shows Armed Burglar Crawl Into Sleeping Family's Bedroom,\" indicating a fascination with visual evidence and the role of technology in criminal investigations.\n\n4. The user has included a mystery-themed article about a missing person and a valuable item (\"Mystery After Montana Mother, Son And A 25-Pound Gold Bar Vanish\"), suggesting an interest in unsolved cases and the intersection of personal tragedy with criminal or financial intrigue.\n\n5. The user has categorized a children's-themed, emotionally uplifting article (\"Baby's Sleepy Photo Shoot With Santa Will Melt Your Heart\") alongside more intense or disturbing content, showing a distinct pattern of balancing light-hearted and dark narratives in their"
+    },
+    {
+      "id": null,
+      "facts": "1. The user has categorized articles related to **toxic masculinity** in the context of **television reality shows**, specifically **\"The Bachelorette\"**, indicating an interest in **gender dynamics within pop culture entertainment**.\n\n2. The user has engaged with **literary analysis** of **contemporary fiction**, including works by **Christian Kracht** and **Jonathan Franzen**, suggesting a focus on **postmodern narrative structures** and **satirical commentary on societal norms**.\n\n3. The user has shown an interest in **language and cultural identity**, as evidenced by their categorization of an article about **Aatish Taseer's discussion of Sanskrit and English**, indicating a fascination with **linguistic power dynamics** and **cultural hybridity**.\n\n4. The user has included **micropoetry** in their categorized articles, specifically referencing a list of **17 micropoems**, suggesting an appreciation for **concise, emotionally resonant literary forms** and **poetic brevity**.\n\n5. The user has demonstrated an unusual interest in **celebrity behavior and public persona**, as seen in their categorization of an article about **Wednesday Martin denying fabrication allegations**, indicating a focus on **media authenticity and public image management**."
+    },
+    {
+      "id": null,
+      "facts": "1. The user has categorized articles that specifically intersect **celebrity culture with social justice**, such as linking Jackie Chan's Oscar win to broader cultural representation in Hollywood.  \n\n2. The user has shown a consistent interest in **STEM-related activism**, as evidenced by their categorization of an article about students developing a fake news detection tool.  \n\n3. The user has engaged with **media and politics in Southeast Asia**, including articles about refugee rights and U.S. policy impacts on Asian communities.  \n\n4. The user has demonstrated a focus on **representation in politics**, particularly highlighting the election of an Asian-American to a state assembly in NYC.  \n\n5. The user has categorized articles that explicitly address **U.S.-China relations**, including both cultural exchanges and policy proposals targeting Chinese visitors."
+    }
+  ],
+  "vectors_npz": "results/positive_control/vectors_Qwen3-8B_LaMP-2.npz",
+  "timestamp": "2026-05-01T14:45:00.015216"
+}

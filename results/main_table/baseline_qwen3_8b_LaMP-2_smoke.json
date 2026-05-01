@@ -1,0 +1,44 @@
+{
+  "experiment": "zero_shot_control",
+  "llm": "Qwen/Qwen3-8B",
+  "task": "LaMP-2",
+  "config": {
+    "layer": 18,
+    "alpha": 0.0,
+    "n_positive": 3,
+    "n_negative": 3,
+    "n_questions": 2,
+    "extract_max_new_tokens": 60,
+    "smoke": true,
+    "smoke_n": 200
+  },
+  "result": {
+    "metric": "accuracy",
+    "value": {
+      "accuracy": 0.765,
+      "f1_weighted": 0.7865929153405935,
+      "f1_macro": 0.3341487473473786,
+      "precision_weighted": 0.8324446439131536,
+      "precision_macro": 0.3370576796811663,
+      "recall_weighted": 0.765,
+      "recall_macro": 0.3808893302438486
+    },
+    "num_eval": 200,
+    "sample_preds": [
+      "business",
+      "crime",
+      "crime",
+      "science & technology",
+      "business"
+    ],
+    "sample_refs": [
+      "politics",
+      "crime",
+      "crime",
+      "politics",
+      "politics"
+    ]
+  },
+  "timestamp": "2026-04-30T18:59:50.655626",
+  "wall_seconds": 87.77558398246765
+}
